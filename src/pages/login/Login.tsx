@@ -1,5 +1,6 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -73,13 +74,14 @@ const Login = () => {
               </button>
             </div>
           </div>
-
-          <button
-            type="submit"
-            className="text-white bg-amber-500 hover:bg-amber-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl px-5 py-2.5 text-center dark:bg-ambere-600 dark:hover:bg-amber-600 dark:focus:ring-amber-700 hover:border hover:border-blue-500 w-full duration-500"
-          >
-            Login
-          </button>
+            <button
+              type="submit"
+              className="text-white bg-amber-500 hover:bg-amber-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl px-5 py-2.5 text-center dark:bg-ambere-600 dark:hover:bg-amber-600 dark:focus:ring-amber-700 hover:border hover:border-blue-500 w-full duration-500"
+            >
+          <Link to="/signup">
+              Login
+          </Link>
+            </button>
           <div className="flex items-start mt-5">
             <label
               htmlFor="terms"
