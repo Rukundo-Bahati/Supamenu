@@ -16,7 +16,7 @@ const Nav = () => {
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <h1 className="text-2xl md:text-5xl">
             <span className="text-white">Supa</span>
-            <span className="text-orange-300">Menu</span>
+            <span className="text-amber-500">Menu</span>
           </h1>
           <div className="flex items-center space-x-4 md:space-x-6">
             {searchOpen && (
