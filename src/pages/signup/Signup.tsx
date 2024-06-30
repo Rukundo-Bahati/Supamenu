@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import Nav from "../../components/nav/Nav";
 
 const Signup = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -9,7 +11,9 @@ const Signup = () => {
   };
 
   return (
-    <div className="bg-amber-500 grid grid-cols-1 md:grid-cols-2 items-center p-4 min-h-screen">
+    <>
+    <Nav />
+    <div className="bg-amber-500 grid grid-cols-1 md:grid-cols-2 items-center p-4">
       <div className="text-center md:text-left md:col-span-1">
         <h1 className="text-3xl md:text-5xl">
           <span className="text-black">Supa</span>
@@ -22,7 +26,7 @@ const Signup = () => {
             Sign up
           </h1>
         </div>
-        <form className="max-w-sm mx-auto md:max-w-none"> 
+        <form className="max-w-sm mx-auto md:max-w-none">
           <div className="mb-3">
             <label
               htmlFor="fname"
@@ -129,16 +133,17 @@ const Signup = () => {
             >
               Already have an account?
               <a
-                href="#"
+                href=""
                 className="text-blue-600 hover:underline dark:text-blue-700 font-semibold"
               >
-                Login
+                <Link to="/login">Login</Link>
               </a>
             </label>
           </div>
         </form>
       </div>
     </div>
+    </>
   );
 };
 
