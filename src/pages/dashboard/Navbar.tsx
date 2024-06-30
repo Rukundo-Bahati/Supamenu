@@ -33,7 +33,7 @@ const Navbar = () => {
             <div className="border-l-2 border-gray-500 h-8 mx-2"></div>
             <span className="text-slate-800">Jaques Kagabo</span>
             <img
-              className="w-8 h-8 md:w-12 md:h-12 rounded-full border-2 border-slate-600"
+              className="w-8 h-8 md:w-14 md:h-14 rounded-full border-2 border-slate-600"
               src={user}
               alt="user photo"
             />

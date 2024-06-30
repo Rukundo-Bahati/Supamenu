@@ -1,7 +1,11 @@
-const Order = () => {
+interface Props {
+  orderno:string
+}
+
+const Order = ({orderno}:Props) => {
   return (
     <div className="bg-gray-200 flex items-center justify-between px-5 m-5 rounded-md m-2">
-      <h1 className="text-amber-500">Order|1</h1>
+      <h1 className="text-amber-500">{orderno}</h1>
       <div className="flex flex-col">
         <p className="text-gray-500">
           Kaffir Lime Vodka Lemogras, Ginger Citrus

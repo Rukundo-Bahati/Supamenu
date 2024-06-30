@@ -3,6 +3,7 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "./Navbar";
 import Orders from "./Orders";
 import { FiMenu } from "react-icons/fi";
+import Clients from "./Clients";
 
 const Dashboard = () => {
   const [openSidebar, setopenSidebar] = useState(false);
@@ -14,7 +15,7 @@ const Dashboard = () => {
   return (
     <div className="flex">
       <div
-        className={`fixed inset-0 z-50 lg:static lg:z-auto lg:block lg:w-54 ${
+        className={`fixed inset-10 z-50 lg:static lg:z-auto lg:block lg:w-54 ${
           openSidebar ? "block" : "hidden"
         } lg:flex-none`}
       >
@@ -27,8 +28,11 @@ const Dashboard = () => {
             onClick={toggleSidebar}
           />
         </div>
-        <Navbar />
-        <Orders />
+        <div className="w-full">
+          <Navbar />
+        </div>
+        {/* <Orders /> */}
+        <Clients />
       </div>
     </div>
   );

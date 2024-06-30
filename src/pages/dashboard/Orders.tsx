@@ -1,3 +1,4 @@
+import AddORder from "../../components/AddORder";
 import Order from "../../components/Order";
 import OrderDetails from "../../components/OrderDetails";
 
@@ -25,22 +26,27 @@ const Orders = () => {
             </button>
           </div>
         </div>
-        <Order />
-        <Order />
-        <Order />
-        <Order />
+        <Order orderno="order|1" />
+        <Order orderno="order|2" />
+        <Order orderno="order|3" />
+        <Order orderno="order|4" />
+        <Order orderno="order|5" />
+        <Order orderno="order|6" />
       </div>
       <div className="flex flex-col lg:w-1/3">
         <h2 className="text-xl font-bold mb-4 text-center lg:text-center my-4 lg:my-4">
           Order Summary
         </h2>
-        <OrderDetails action="Delivery" quantity="6" />
-        <OrderDetails action="Waiting" quantity="12" />
-        <hr />
-        <OrderDetails action="Rejected" quantity="1" />
-        <hr />
-        <OrderDetails action="All" quantity="30" />
-        <hr />
+        <div>
+          <OrderDetails action="Delivery" quantity="6" />
+          <OrderDetails action="Waiting" quantity="12" />
+          <hr />
+          <OrderDetails action="Rejected" quantity="1" />
+          <hr />
+          <OrderDetails action="All" quantity="30" />
+          <hr />
+        </div>
+        <AddORder />
       </div>
     </div>
   );
