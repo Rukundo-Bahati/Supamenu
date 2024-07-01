@@ -4,6 +4,8 @@ import Navbar from "./Navbar";
 import Orders from "./Orders";
 import { FiMenu } from "react-icons/fi";
 import Clients from "./Clients";
+import ClientForm from "./ClientForm";
+import Profile from "./Profile";
 
 const Dashboard = () => {
   const [openSidebar, setopenSidebar] = useState(false);
@@ -32,7 +34,9 @@ const Dashboard = () => {
           <Navbar />
         </div>
         {/* <Orders /> */}
-        <Clients />
+        {/* <Clients /> */}
+        {/* <ClientForm /> */}
+        <Profile />
       </div>
     </div>
   );

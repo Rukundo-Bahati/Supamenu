@@ -8,8 +8,7 @@ import {
 } from "react-icons/fi";
 const Sidebar = () => {
   return (
-    <div
-      className="bg-slate-950 flex flex-col gap-5 h-screen border-l-2 border-amber-600 pt-10">
+    <div className="bg-slate-950 flex flex-col gap-5 border-l-2 border-amber-600 pt-10">
       <h1 className="text-2xl md:text-2xl p-4 font-semibold">
         <span className="text-amber-500">Supa</span>
         <span className="text-white">Menu</span>
