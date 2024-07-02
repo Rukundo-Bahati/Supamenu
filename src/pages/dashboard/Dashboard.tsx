@@ -6,6 +6,8 @@ import { FiMenu } from "react-icons/fi";
 import Clients from "./Clients";
 import ClientForm from "./ClientForm";
 import Profile from "./Profile";
+import Trends from "./Trends";
+import Menus from "./Menus";
 
 const Dashboard = () => {
   const [openSidebar, setopenSidebar] = useState(false);
@@ -36,7 +38,9 @@ const Dashboard = () => {
         {/* <Orders /> */}
         {/* <Clients /> */}
         {/* <ClientForm /> */}
-        <Profile />
+        {/* <Profile /> */}
+        {/* <Trends /> */}
+        <Menus />
       </div>
     </div>
   );

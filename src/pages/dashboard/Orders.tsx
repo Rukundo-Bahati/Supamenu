@@ -46,7 +46,11 @@ const Orders = () => {
           <OrderDetails action="All" quantity="30" />
           <hr />
         </div>
-        <AddORder />
+        <AddORder
+          mode="Manually"
+          addItem="Create new Order"
+          item="Create new Order"
+        />
       </div>
     </div>
   );

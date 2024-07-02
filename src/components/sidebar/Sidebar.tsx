@@ -8,7 +8,7 @@ import {
 } from "react-icons/fi";
 const Sidebar = () => {
   return (
-    <div className="bg-slate-950 flex flex-col gap-5 border-l-2 border-amber-600 pt-10">
+    <div className="bg-slate-950 flex  h-screen flex-col gap-5 border-l-2 border-amber-600 pt-10">
       <h1 className="text-2xl md:text-2xl p-4 font-semibold">
         <span className="text-amber-500">Supa</span>
         <span className="text-white">Menu</span>
@@ -29,10 +29,10 @@ const Sidebar = () => {
         </div>
         <div className="flex items-center gap-2 hover:text-white duration-300">
           <FiBook />
-          <a href="#">Menus</a>
+          <a href="#">Menu</a>
         </div>
       </div>
-      <div className="flex flex-col gap-4 text-gray-400 mt-32">
+      <div className="flex flex-col gap-4 text-gray-400 mt-24">
         <hr className="w-full" />
         <div className="flex items-center gap-2 hover:text-white duration-300 px-4 ">
           <FiSettings />

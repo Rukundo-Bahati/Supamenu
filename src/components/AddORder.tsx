@@ -1,12 +1,18 @@
 import { BsPlus } from "react-icons/bs";
 
-const AddORder = () => {
+interface Props {
+  item:string;
+  addItem:string;
+  mode:string
+}
+
+const AddORder = ({addItem,item,mode}:Props) => {
   return (
     <div className="border border-gray-400 rounded-md">
-      <h2 className="p-3">Add Order</h2>
-      <p className="text-gray-500 px-3">Manually</p>
+      <h2 className="p-3">{addItem}</h2>
+      <p className="text-gray-500 px-3">{mode}</p>
       <div className="flex items-center justify-between m-4">
-        <h2 className="text-gray-400">Create New Order</h2>
+        <h2 className="text-gray-400">{item}</h2>
         <BsPlus className="bg-slate-300 rounded-sm text-xl text-slate-600 cursor-pointer" />
       </div>
       <div className="flex border-t-2 border-slate-400 p-3 items-center justify-between">
