@@ -39,8 +39,8 @@ const Dashboard = () => {
         {/* <Clients /> */}
         {/* <ClientForm /> */}
         {/* <Profile /> */}
-        {/* <Trends /> */}
-        <Menus />
+        <Trends />
+        {/* <Menus /> */}
       </div>
     </div>
   );
